@@ -1,0 +1,347 @@
+body {
+    background: #24262B;
+    font-family: 'Noto Sans';
+    min-height: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    padding: 0!important;
+    margin: 0!important;
+    height: 100%!important;
+    width: 100%!important;
+}
+
+.navbar {
+    z-index: 3;
+}
+
+.selected span {
+    color: rgba(255, 255, 255, 1)!important;
+    border-bottom: white solid 2px;
+}
+
+.nav-link {
+    font-weight: 550;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: rgba(255, 255, 255, 0.90)!important;
+    transition: none!important;
+}
+
+.text-section span {
+    color: white;
+    font-weight: 550;
+}
+
+.text-section .title {
+    line-height: 60px;
+    font-size: 56px;
+}
+
+.text-section .subtitle {
+    font-size: 24px;
+}
+
+.text-section .desc {
+    font-size: 16px;
+    max-width: 560px;
+}
+
+#svg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#first-button-bar, #second-button-bar {
+    display: none;
+    overflow: hidden;
+    width: auto;
+    height: 48px;
+}
+
+#first-button-bar {
+    margin-bottom: 40px;
+}
+
+.contact-button {
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgba(252,4,65,1) 0%, rgba(249,25,117,1) 50%, rgba(246,45,168,1) 100%);
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    width: 144px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background: linear-gradient(90deg, rgba(255,24,85,1) 0%, rgba(255,45,137,1) 50%, rgba(255,65,188,1) 100%);
+}
+
+#first-button-bar a, #second-button-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgba(252,4,65,1) 0%, rgba(249,25,117,1) 50%, rgba(246,45,168,1) 100%);
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    line-height: 18px;
+    width: 208px;
+    height: 48px;
+    text-decoration: none;
+    left: -208px ;
+}
+
+.home-content {
+    margin-top: auto!important;
+    margin-bottom: 50px;
+}
+
+#first-button-bar a:hover, #first-button-bar a:focus, #second-button-bar a:hover, #second-button-bar a:focus {
+    background: linear-gradient(90deg, rgba(255,24,85,1) 0%, rgba(255,45,137,1) 50%, rgba(255,65,188,1) 100%);
+}
+
+.info-section {
+    margin-top: 110px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-pane {
+    height: 100%;
+}
+
+.info-pane .info-content {
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 620px;
+}
+
+.info-pane .info-image {
+    height: 40%;
+}
+
+.info-pane .info-text {
+    height: 60%;
+    padding: 28px;
+    overflow: scroll;
+}
+
+.info-pane .info-text .info-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.info-pane .info-text .info-details {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 550;
+    text-align: justify;
+}
+
+.text-pane {
+    padding-bottom: 35px;
+}
+
+.text-pane .text-content {
+    max-width: 420px;
+}
+
+.text-pane .text-year {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41px;
+}
+
+.text-pane .text-thing {
+    text-align: right;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.text-pane .text-detail {
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.frame-box {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+#frame-box-1 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.frame-number {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 18px 10px 18px;
+}
+
+@media screen and (min-width: 1320px) {
+    #svg {
+        z-index: 2;
+    }
+
+    #first-button-bar, #second-button-bar {
+        display: block;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .home-content {
+        margin-top: auto!important;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home-content {
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+}
+
+/* media used for navbar, based on bootstrap navbar ('.navbar-expand-md') */
+@media screen and (min-width: 1140px) {
+    .frame-box {
+        top: 120px;
+    }
+
+    .info-section {
+        margin-top: 80px;
+    }
+
+    .navbar-expand-custom {
+        flex-wrap:nowrap;
+        justify-content:flex-start
+    }
+
+    .navbar-expand-custom .navbar-nav {
+        flex-direction:row
+    }
+
+    .navbar-expand-custom .navbar-nav .dropdown-menu {
+        position:absolute
+    }
+
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right:var(--bs-navbar-nav-link-padding-x);
+        padding-left:var(--bs-navbar-nav-link-padding-x)
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display:flex!important;
+        flex-basis:auto
+    }
+
+    .navbar-expand-custom .navbar-toggler {
+        display:none
+    }
+
+    .flex-custom-row {
+        flex-direction: row!important;
+    }
+
+    .col-custom-auto {
+        flex:0 0 auto;
+        width:auto
+    }
+
+    .mb-custom-0 {
+        margin-bottom: 0!important;
+    }
+
+    .ms-custom-auto {
+        margin-left: auto!important;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .info-section .text-pane {
+        width: 50%;
+    }
+
+    .info-section .info-pane {
+        width: 50%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-pane {
+        padding: 80px;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .text-pane .text-year {
+        font-size: 56px;
+        line-height: 50px;
+    }
+
+    .text-pane .text-thing {
+        font-size: 40px;
+    }
+
+    .text-pane .text-detail {
+        font-size: 24px;
+    }
+
+    .info-section {
+        margin-right: 80px;
+    }
+
+    .frame-number {
+        font-size: 40px;
+        margin: 10px 28px 10px 28px;
+    }
+
+    .info-pane .info-text .info-title {
+        font-size: 18px;
+    }
+
+    .info-pane .info-text .info-details {
+        font-size: 16px;
+    }
+}

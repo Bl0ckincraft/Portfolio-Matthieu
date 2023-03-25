@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{{ asset('favico.ico') }}">
+        <title>Portfolio MD</title>
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
+        <link href="{{ asset("assets/css/bootstrap.min.css") }}" rel="stylesheet">
+        <link href="{{ asset("assets/css/app.css") }}" rel="stylesheet">
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            {% include 'partials/header.html.twig' %}
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <script>
+            const ROUTES = {
+                'app_home': '{{ path('app_home') }}',
+                'app_formation': '{{ path('app_formation') }}',
+                'app_projects': '{{ path('app_projects') }}',
+                'app_experience': '{{ path('app_experience') }}',
+                'app_interests': '{{ path('app_interests') }}',
+                'app_skills': '{{ path('app_skills') }}',
+                'app_contact': '{{ path('app_contact') }}'
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/ac8a9b7e7f.js" crossorigin="anonymous"></script>
+        <script src="{{ asset("assets/js/bootstrap.bundle.min.js") }}"></script>
+        <script src="{{ asset("assets/js/app.js") }}"></script>
     </body>
 </html>
