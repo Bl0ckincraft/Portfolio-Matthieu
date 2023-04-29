@@ -10,11 +10,27 @@
         <link href="{{ asset("assets/css/app.css") }}" rel="stylesheet">
     </head>
     <body>
+        <!-- Must define this dict in order to generate header and footer -->
+         {% set navigationRoutes = {
+             'app_home': 'Accueil',
+             'app_formation': 'Formation',
+             'app_projects': 'Projets Entrepreneuriaux',
+             'app_experience': 'Expérience Professionelle',
+             'app_interests': 'Centres d\'intérêts',
+             'app_skills': 'Compétences'
+         } %}
+
         <header>
             {% include 'partials/header.html.twig' %}
         </header>
 
-        {% block content %} {% endblock %}
+        <main class="d-flex flex-column">
+            {% block content %} {% endblock %}
+        </main>
+
+        {% if footer is defined and footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endif %}
 
         <script>
             const ROUTES = {
@@ -24,9 +40,11 @@
                 'app_experience': '{{ path('app_experience') }}',
                 'app_interests': '{{ path('app_interests') }}',
                 'app_skills': '{{ path('app_skills') }}',
-                'app_contact': '{{ path('app_contact') }}'
+                'app_contact': '{{ path('app_contact') }}',
+                'app_test': '{{ path('app_test') }}'
             }
         </script>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://kit.fontawesome.com/ac8a9b7e7f.js" crossorigin="anonymous"></script>
         <script src="{{ asset("assets/js/bootstrap.bundle.min.js") }}"></script>

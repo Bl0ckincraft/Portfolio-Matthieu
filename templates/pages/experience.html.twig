@@ -1,5 +1,98 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
+{% set footer = true %}
 
+{% block content %}
+    <div id="frame-container" class="experiences">
+        <div id="frame-1" class="frame" data-frame-id="1">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">01</span>
+            </div>
+
+            <div class="frame-content w-100">
+                <div class="padding-top-navbar"></div>
+                <div class="info-case mt-3">
+                    <span class="info-date">2023</span>
+                    <span class="info-name">Stage en entreprise</span>
+                    <span class="info-details">Pierredeplan</span>
+                </div>
+                <div class="my-5 missions">
+                    <span class="neon py-5">Mes missions</span>
+                    <div class="carrousel d-flex flex-row w-100">
+                        <img id="missions-1" class="carrousel-element" src="{{ asset('assets/images/experiences/missions/mission-1.svg') }}" alt=""/>
+                        <img id="missions-2" class="carrousel-element" src="{{ asset('assets/images/experiences/missions/mission-2.svg') }}" alt=""/>
+                        <img id="missions-3" class="carrousel-element" src="{{ asset('assets/images/experiences/missions/mission-3.svg') }}" alt=""/>
+                        <img id="missions-4" class="carrousel-element" src="{{ asset('assets/images/experiences/missions/mission-4.svg') }}" alt=""/>
+                    </div>
+                </div>
+                <div class="d-flex flex-column pb-4 px-5">
+                    <p style="font-weight: 550; font-size: 18px; color: #FFFFFF">Au cours de ce stage de deux mois, j’ai eu l’opportunité de travailler au sein du service marketing et d'approfondir mes connaissances en matière d'analyse de marché, de marketing numérique et de marketing stratégique. J’ai également pu découvrir les différents produits et marques de l’entreprise, ainsi que les enjeux d'une entreprise avec un positionnement haut de gamme.</p>
+                    <span class="scroll-button mx-auto my-3">Scroll</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-2" class="frame" data-frame-id="2">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">02</span>
+            </div>
+
+            <div class="frame-content w-100">
+
+            </div>
+        </div>
+
+        <div id="frame-3" class="frame" data-frame-id="3">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">03</span>
+            </div>
+
+            <div class="frame-content w-100 mt-5">
+                <div class="info-case mt-3">
+                    <span class="info-date">2020 - 2022</span>
+                    <span class="info-name">Travail étudiant</span>
+                    <span class="info-details">E.Leclerc <img width="40px" alt="" src="{{ asset('assets/images/experiences/leclerc.svg') }}"/></span>
+                </div>
+                <div class="mx-5 my-5 d-flex flex-row flex-wrap">
+                    <div class="col-12 col-md-4 my-md-auto">
+                        <img class="post-leclerc mx-auto my-3" alt="" src="{{ asset('assets/images/experiences/post-leclerc.svg') }}"/>
+                    </div>
+                    <div class="tasks col-md-8 d-flex flex-column flex-md-row flex-md-wrap my-md-auto">
+                        <div class="col-xxl-3 col-md-6 px-3">
+                            <div class="d-flex flex-column">
+                                <p>
+                                    Développement de <strong>compétences</strong> en <strong>communication</strong> et en <strong>service client</strong> en travaillant avec des clients de différentes horizons.
+                                </p>
+                                <img class="mx-auto my-auto" alt="" src="{{ asset('assets/images/experiences/leclerc.svg') }}"/>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6 px-3">
+                            <div class="d-flex flex-column flex-md-column-reverse">
+                                <p>
+                                    Apprendre à <strong>travailler</strong> éfficacement <strong>en équipe</strong> en collaborant avec les collègues pour résoudre des problèmes et maintenir un environement de travail agréable et productif.
+                                </p>
+                                <img class="mx-auto my-auto" alt="" src="{{ asset('assets/images/experiences/leclerc.svg') }}"/>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6 px-3">
+                            <div class="d-flex flex-column">
+                                <p>
+                                    Gagner en <strong>autonomie</strong> et en <strong>responsabilité</strong> en s'impliquant dans les processus de vente et de gestion des stocks.
+                                </p>
+                                <img class="mx-auto my-auto" alt="" src="{{ asset('assets/images/experiences/leclerc.svg') }}"/>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6 px-3">
+                            <div class="d-flex flex-column flex-md-column-reverse">
+                                <p>
+                                    Mieux <strong>comprendre</strong> les <strong>enjeux du commerce</strong> et se familiariser avec les méthodes de vente et de <strong>marketing</strong> utilisées dans les <strong>grandes surfaces</strong>.
+                                </p>
+                                <img class="mx-auto my-auto" alt="" src="{{ asset('assets/images/experiences/leclerc.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

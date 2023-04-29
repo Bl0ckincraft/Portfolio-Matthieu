@@ -17,12 +17,14 @@ class PagesController extends AbstractController
     #[Route('/formation', name: 'app_formation')]
     public function formation(): Response
     {
+        return $this->render('errors/soon.html.twig');
         return $this->render('pages/formation.html.twig');
     }
 
     #[Route('/projets-entrepreneuriaux', name: 'app_projects')]
     public function projects(): Response
     {
+        return $this->render('errors/soon.html.twig');
         return $this->render('pages/projects.html.twig');
     }
 
@@ -35,6 +37,7 @@ class PagesController extends AbstractController
     #[Route('/centres-dinterets', name: 'app_interests')]
     public function interests(): Response
     {
+        return $this->render('errors/soon.html.twig');
         return $this->render('pages/interests.html.twig');
     }
 
@@ -47,6 +50,7 @@ class PagesController extends AbstractController
     #[Route('/contact', name: 'app_contact')]
     public function contact(): Response
     {
+        return $this->render('errors/soon.html.twig');
         return $this->render('pages/contact.html.twig');
     }
 }

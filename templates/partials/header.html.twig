@@ -1,4 +1,3 @@
-
     <div class="mx-5 mt-3">
         <nav class="navbar navbar-expand-custom d-flex flex-wrap align-items-center justify-content-center justify-content-between py-3 mb-4">
             <button class="navbar-toggler collapsed border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,24 +6,11 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="flex-column flex-custom-row nav col-12 col-custom-auto mb-2 mb-custom-0">
-                    <li class="nav-item">
-                        <a href="{{ path('app_home') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_home' %} selected {% endif %}"><span>Accueil</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('app_formation') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_formation' %} selected {% endif %}"><span>Formation</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('app_projects') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_projects' %} selected {% endif %}"><span>Projets Entrepreneuriaux</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('app_experience') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_experience' %} selected {% endif %}"><span>Expérience Professionelle</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('app_interests') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_interests' %} selected {% endif %}"><span>Centres d'intérêts</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ path('app_skills') }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == 'app_skills' %} selected {% endif %}"><span>Compétences</span></a>
-                    </li>
+                    {% for key in navigationRoutes|keys %}
+                        <li class="nav-item">
+                            <a href="{{ path(key) }}" class="nav-link px-0 mx-2 text-center {% if app.request.attributes.get('_route') == key %} selected {% endif %}"><span>{{ navigationRoutes[key] }}</span></a>
+                        </li>
+                    {% endfor %}
                 </ul>
                 <div class="ms-custom-auto">
                     <a type="button" class="mx-auto contact-button" href="{{ path('app_contact') }} {% if app.request.attributes.get('_route') == 'app_contact' %} selected {% endif %}"><span>Contact</span></a>

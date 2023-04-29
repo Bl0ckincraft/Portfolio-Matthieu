@@ -52,53 +52,12 @@ if (document.location.pathname === ROUTES['app_home']) {
     setInterval(moveButtons, 10);
 }
 
-if (document.location.pathname === ROUTES['app_formation']) {
-    var currentFrame = 1;
-    var lastChange = 0;
+var frameContainer = document.getElementById("frame-container");
 
-    window.addEventListener('wheel', function (e) {
-        var currentFrameElement = document.getElementById('frame-box-' + currentFrame);
+if (frameContainer !== null) {
+    function changeContentOnScroll() {
 
-        if (Date.now() - lastChange >= 400) {
-            var scrollables = document.querySelectorAll('#frame-box-' + currentFrame + ' .info-text');
+    }
 
-            for (var i = 0; i < scrollables.length; i++) {
-                if (scrollables[i].contains(e.target)) {
-                    return;
-                }
-            }
-
-            if (e.deltaY < 0) {
-                newFrame = document.getElementById('frame-box-' + (currentFrame - 1));
-
-                if (newFrame !== null) {
-                    currentFrame --;
-                    lastChange = Date.now();
-
-                    if (currentFrameElement !== null) {
-                        currentFrameElement.style.pointerEvents = 'none';
-                        currentFrameElement.style.opacity = 0;
-                    }
-
-                    newFrame.style.pointerEvents = 'auto';
-                    newFrame.style.opacity = 1;
-                }
-            } else if (e.deltaY > 0) {
-                newFrame = document.getElementById('frame-box-' + (currentFrame + 1));
-
-                if (newFrame !== null) {
-                    currentFrame ++;
-                    lastChange = Date.now();
-
-                    if (currentFrameElement !== null) {
-                        currentFrameElement.style.pointerEvents = 'none';
-                        currentFrameElement.style.opacity = 0;
-                    }
-
-                    newFrame.style.pointerEvents = 'auto';
-                    newFrame.style.opacity = 1;
-                }
-            }
-        }
-    });
+    window.addEventListener("scroll", changeContentOnScroll);
 }

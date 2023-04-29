@@ -15,6 +15,25 @@ html {
     width: 100%!important;
 }
 
+main {
+    min-height: calc(100vh - 1.5rem);
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
 .navbar {
     z-index: 3;
 }
@@ -111,7 +130,7 @@ html {
     width: 208px;
     height: 48px;
     text-decoration: none;
-    left: -208px ;
+    left: -208px;
 }
 
 .home-content {
@@ -123,96 +142,253 @@ html {
     background: linear-gradient(90deg, rgba(255,24,85,1) 0%, rgba(255,45,137,1) 50%, rgba(255,65,188,1) 100%);
 }
 
-.info-section {
-    margin-top: 110px;
-    margin-right: 20px;
+.footer .footer-navigation-section {
+    background: linear-gradient(90deg, rgba(252,4,65,1) 0%, rgba(249,25,117,1) 50%, rgba(246,45,168,1) 100%);
+}
+
+.footer .footer-navigation-section a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer .footer-navigation-section .indication {
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    line-height: 30px;
+}
+
+.footer .footer-navigation-section .indication-title {
+    font-size: 24px;
+    font-weight: 550;
+    color: white;
+}
+
+.footer .footer-information-section {
+    background-color: #171B29;
+}
+
+.footer .footer-information-section .button {
+    text-decoration: none;
+}
+
+.padding-top-navbar {
+    padding-top: 120px;
+}
+
+.text-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.neon {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(255, 165, 220);
+    text-shadow: 0 0 10px rgb(255, 165, 220),
+                 0 0 20px rgb(255, 165, 220),
+                 0 0 30px rgb(255, 165, 220),
+                 0 0 40px rgb(255, 60, 180),
+                 0 0 70px rgb(255, 60, 180),
+                 0 0 80px rgb(255, 60, 180),
+                 0 0 100px rgb(255, 60, 180),
+                 0 0 150px rgb(255, 60, 180);
+    animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-animation {
+    from {
+        text-shadow: 0 0 10px rgb(255, 165, 220),
+                     0 0 20px rgb(255, 165, 220),
+                     0 0 30px rgb(255, 165, 220),
+                     0 0 40px rgb(255, 60, 180),
+                     0 0 70px rgb(255, 60, 180),
+                     0 0 80px rgb(255, 60, 180),
+                     0 0 100px rgb(255, 60, 180),
+                     0 0 150px rgb(255, 60, 180);
+    } to {
+        text-shadow: 0 0 20px rgb(255, 165, 220),
+                     0 0 30px rgb(255, 165, 220),
+                     0 0 40px rgb(255, 60, 180),
+                     0 0 70px rgb(255, 60, 180),
+                     0 0 80px rgb(255, 60, 180),
+                     0 0 100px rgb(255, 60, 180),
+                     0 0 150px rgb(255, 60, 180),
+                     0 0 180px rgb(255, 60, 180);
+    }
+}
+
+.info-case {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.info-case .info-date {
+    color: rgba(200, 200, 200, 1);
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.info-case .info-name {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.info-case .info-details {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.missions .carrousel {
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100vw - 10px);
+}
+
+.carrousel .carrousel-element {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 800px;
+    margin-left: 30px;
+    width: calc(100vw - 100px);
+}
+
+.carrousel .carrousel-element:first-of-type {
+    margin-left: 0;
+}
+
+#frame-container .missions {
     display: flex;
     flex-direction: column;
 }
 
-.info-pane {
-    height: 100%;
+#frame-container .missions .neon {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
-.info-pane .info-content {
-    background: rgba(255, 255, 255, 0.1);
-    max-width: 620px;
+#frame-container .frame {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
-.info-pane .info-image {
-    height: 40%;
+#frame-container .frame-indicator {
+    display: none;
+    height: 100vh;
 }
 
-.info-pane .info-text {
-    height: 60%;
-    padding: 28px;
-    overflow: scroll;
-}
-
-.info-pane .info-text .info-title {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-}
-
-.info-pane .info-text .info-details {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 550;
-    text-align: justify;
-}
-
-.text-pane {
-    padding-bottom: 35px;
-}
-
-.text-pane .text-content {
-    max-width: 420px;
-}
-
-.text-pane .text-year {
-    text-align: left;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
+#frame-container .frame-indicator .indicator {
     font-size: 40px;
-    line-height: 41px;
-}
-
-.text-pane .text-thing {
-    text-align: right;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    font-size: 27px;
-}
-
-.text-pane .text-detail {
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.frame-box {
-    opacity: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 100px;
-    transition: opacity 1s ease-in-out;
-    pointer-events: none;
-}
-
-#frame-box-1 {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.frame-number {
+    font-weight: 800;
     color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px 18px 10px 18px;
+}
+
+.experiences #frame-1 {
+    background-image: url("../images/experiences/frame-1-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.experiences #frame-3 {
+    background-image: url("../images/experiences/frame-3-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scroll-button {
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgba(252,4,65,1) 0%, rgba(249,25,117,1) 50%, rgba(246,45,168,1) 100%);
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    cursor: pointer;
+    padding: 10px 35px 10px 35px;
+}
+
+.scroll-button:hover {
+    background: linear-gradient(90deg, rgba(255,24,85,1) 0%, rgba(255,45,137,1) 50%, rgba(255,65,188,1) 100%);
+}
+
+.experiences .post-leclerc {
+    width: 100%;
+}
+
+.experiences .tasks p {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.skills .skill-title {
+    color: #FFFFFF;
+    font-weight: 750;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skills .skill-desc {
+    color: #FFFFFF;
+    font-weight: 350;
+    font-size: 18px;
+    text-align: center;
+}
+
+.skills #frame-1 {
+    background-image: url("../images/skills/backgrounds/frame-1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.skills #frame-2 {
+    background-image: url("../images/skills/backgrounds/frame-2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.skills #frame-3 {
+    background-image: url("../images/skills/backgrounds/frame-3.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.skills #frame-4 {
+    background-image: url("../images/skills/backgrounds/frame-4.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.skills #frame-5 {
+    background-image: url("../images/skills/backgrounds/frame-5.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 @media screen and (min-width: 1320px) {
@@ -231,6 +407,46 @@ html {
         margin-top: auto!important;
         margin-bottom: 150px;
     }
+
+    .info-case .info-date {
+        font-size: 56px;
+        line-height: 42px;
+    }
+
+    .info-case .info-name {
+        font-size: 40px;
+        margin-left: 65px;
+        line-height: 40px;
+        text-align: right;
+    }
+
+    .info-case .info-details {
+        font-size: 24px;
+    }
+
+    #frame-container .frame-indicator {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #frame-container .missions {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #frame-container .missions .neon {
+        margin: auto 1.5rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .carrousel .carrousel-element {
+        width: calc(100vw - 400px);
+    }
+
+    .missions .carrousel {
+        max-width: calc(100vw - 250px);
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -242,14 +458,6 @@ html {
 
 /* media used for navbar, based on bootstrap navbar ('.navbar-expand-md') */
 @media screen and (min-width: 1140px) {
-    .frame-box {
-        top: 120px;
-    }
-
-    .info-section {
-        margin-top: 80px;
-    }
-
     .navbar-expand-custom {
         flex-wrap:nowrap;
         justify-content:flex-start
@@ -293,55 +501,12 @@ html {
     .ms-custom-auto {
         margin-left: auto!important;
     }
-}
 
-@media screen and (min-width: 1210px) {
-    .info-section .text-pane {
-        width: 50%;
+    .padding-top-navbar {
+        padding-top: 100px;
     }
 
-    .info-section .info-pane {
-        width: 50%;
-    }
-
-    .info-section {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .text-pane {
-        padding: 80px;
-    }
-}
-
-@media screen and (min-width: 620px) {
-    .text-pane .text-year {
-        font-size: 56px;
-        line-height: 50px;
-    }
-
-    .text-pane .text-thing {
-        font-size: 40px;
-    }
-
-    .text-pane .text-detail {
-        font-size: 24px;
-    }
-
-    .info-section {
-        margin-right: 80px;
-    }
-
-    .frame-number {
-        font-size: 40px;
-        margin: 10px 28px 10px 28px;
-    }
-
-    .info-pane .info-text .info-title {
-        font-size: 18px;
-    }
-
-    .info-pane .info-text .info-details {
-        font-size: 16px;
+    header {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
