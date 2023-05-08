@@ -17,7 +17,6 @@ class PagesController extends AbstractController
     #[Route('/formation', name: 'app_formation')]
     public function formation(): Response
     {
-        return $this->render('errors/soon.html.twig');
         return $this->render('pages/formation.html.twig');
     }
 
@@ -52,5 +51,12 @@ class PagesController extends AbstractController
     {
         return $this->render('errors/soon.html.twig');
         return $this->render('pages/contact.html.twig');
+    }
+
+    #[Route('/recommandations', name: 'app_recommandations')]
+
+    public function recommandations(): Response
+    {
+        return $this->render('pages/recommandations.html.twig');
     }
 }

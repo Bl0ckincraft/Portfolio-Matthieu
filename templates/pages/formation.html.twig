@@ -1,7 +1,436 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
-    <div class="">
+{% set footer = true %}
 
+{% block content %}
+    <div id="frame-container" class="formation">
+        <div id="frame-1" class="frame" data-frame-id="1">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">01</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column">
+                <div class="padding-top-navbar"></div>
+
+                <div class="info-case info-case-full mt-3 d-flex flex-column px-3 mx-auto w-100">
+                    <div class="col-md-6 me-md-auto d-flex">
+                        <span class="info-details">Université Paul Sabatier Toulouse III, antenne de Castres (IUT)</span>
+                    </div>
+                    <div class="col-md-6 mx-md-auto d-flex">
+                        <span class="info-date">2022-2023</span>
+                    </div>
+                    <div class="col-md-6 ms-md-auto d-flex">
+                        <span class="info-name">BUT TC 2ème année</span>
+                    </div>
+                </div>
+
+                <div class="my-auto py-5 px-5">
+                    <span style="font-size: 32px; font-weight: 750">Spécialité BDMRC !</span><br/>
+                    <br/>
+                    <span style="font-size: 18px; font-weight: 550">J'ai opté pour la filière Business et Management de la Relation Client pour améliorer mes compétences en communication et en gestion, des atouts indispensables pour monter sa propre entreprise.</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-2" class="frame" data-frame-id="2">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">02</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-magenta mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+                <div class="info-case mt-3 d-flex flex-column px-3 mx-auto">
+                    <span class="info-date">2022-2023</span>
+                </div>
+
+                <div class="mx-5 my-auto py-5">
+                    <div class="shorts-container px-3 d-md-flex flex-md-row flex-wrap">
+                        <div class="short-container mx-auto col-md-6 col-xl-4 px-5 py-3">
+                            <iframe class="short" src="https://www.youtube.com/embed/GilIlgVjPoM" title="Reel 1 petit +" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="short-container mx-auto col-md-6 col-xl-4 px-5 py-3">
+                            <iframe class="short" src="https://www.youtube.com/embed/yRu69rZ5diM" title="Story petit +" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="short-container mx-auto col-md-6 col-xl-4 px-5 py-3">
+                            <iframe class="short" src="https://www.youtube.com/embed/-SQVCmnWgFs" title="Reel petit + 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mx-auto" style="font-size: 24px; font-weight: 750">Création d'une campagne de communication 360 pour l'épicerie solidaire de l'IUT : Le petit +</span>
+            </div>
+        </div>
+
+        <div id="frame-3" class="frame" data-frame-id="3">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">03</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-wheat mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+
+                <div class="mx-5 my-5">
+                    <div class="d-md-flex flex-md-row-reverse">
+                        <div class="col-md-8 d-flex flex-column">
+                            <div class="info-case mb-3">
+                                <span class="info-date mx-auto pe-md-5">2022-2023</span>
+                            </div>
+
+                            <div class="my-auto">
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/challenge_the_room/icon-1.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">I. Analyse de la société ChallengeTheRoom et du marché des teambuilding en Occitanie.</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/challenge_the_room/icon-2.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">II. Mise en place d'une problématique : Comment développer la clientele professionnelle de Challenge The Room tout en exploitant les tendances du TeamBuilding ?</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/challenge_the_room/icon-3.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">III. Mise en place d'un plan de marketing stratégique sur 3 ans.</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/challenge_the_room/icon-4.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">IV. Mise en place d'objectifs SMART sur 3 ans.</span>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/challenge_the_room/icon-5.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">V. Création d'un plan budgétaire.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column mt-md-0 mt-5 mx-3">
+                            <div class="mx-auto my-auto">
+                                <img width="100%" alt="" src="{{ asset('assets/images/formation/challenge_the_room/image.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Challenge The Room : élaboration d'un plan d'actions commerciales pour l'entreprise et présentation orale. Groupe de 3</span>
+            </div>
+        </div>
+
+        <div id="frame-4" class="frame" data-frame-id="4">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">04</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-orange mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+
+                <div class="mx-5 my-5">
+                    <div class="d-md-flex flex-md-row-reverse">
+                        <div class="col-md-8 d-flex flex-column">
+                            <div class="info-case mb-3">
+                                <span class="info-date mx-auto pe-md-5">2022-2023</span>
+                            </div>
+
+                            <div class="d-md-flex flex-md-row">
+                                <div class="col-md-8 my-auto">
+                                    <div class="d-flex flex-row mb-4">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-1.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">Création d'un plan marketing pour exporter la marque Orangina en Espagne</span>
+                                    </div>
+                                    <div class="d-flex flex-row mb-4">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-2.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">I. Analyse de la concurrence</span>
+                                    </div>
+                                    <div class="d-flex flex-row mb-4">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-3.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">II. Positionnement</span>
+                                    </div>
+                                    <div class="d-flex flex-row mb-4">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-4.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">III. Ciblage</span>
+                                    </div>
+                                    <div class="d-flex flex-row mb-4">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-5.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">IV. Produits</span>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <img class="my-auto" src="{{ asset('assets/images/formation/orangina/icon-6.svg') }}" alt=""/>
+                                        <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">V. Prix</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex flex-column">
+                                    <div class="mx-auto my-auto">
+                                        <img width="100%" alt="" src="{{ asset('assets/images/formation/orangina/screen.svg') }}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column mt-md-0 mt-5 mx-3">
+                            <div class="mx-auto my-auto">
+                                <img width="100%" alt="" src="{{ asset('assets/images/formation/orangina/image.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Orangina: Pilotage commercial d'une organisation. Groupe de 6.</span>
+            </div>
+        </div>
+
+        <div id="frame-5" class="frame" data-frame-id="5">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">05</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-aqua mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+
+                <div class="my-auto px-5 px-lg-2 py-5 d-lg-flex flex-lg-row-reverse moodboard">
+                    <div class="col-lg-4 d-flex flex-column">
+                        <div class="info-case my-auto">
+                            <span class="info-date mx-auto mx-lg-0 me-lg-auto mb-5 mb-lg-0">2022-2023</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 d-md-flex flex-md-row">
+                        <div class="col-md-6 d-flex flex-column" id="moodboard-first">
+                            <div class="ms-md-auto my-auto">
+                                <img alt="" src="{{ asset('assets/images/formation/moodboard/first.svg') }}"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column" id="moodboard-second">
+                            <div class="me-md-auto my-auto">
+                                <img alt="" src="{{ asset('assets/images/formation/moodboard/second.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Réalisation d’un moodboard sur mes aspirations professionnelles. Travail individuel.</span>
+
+            </div>
+        </div>
+
+        <div id="frame-6" class="frame" data-frame-id="6">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">06</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <div class="info-case info-case-full mt-3 d-flex flex-column px-3 mx-auto w-100">
+                    <div class="col-md-6 me-md-auto d-flex">
+                        <span class="info-details">Université Paul Sabatier Toulouse III, antenne de Castres (IUT)</span>
+                    </div>
+                    <div class="col-md-6 mx-md-auto d-flex">
+                        <span class="info-date">2021-2022</span>
+                    </div>
+                    <div class="col-md-6 ms-md-auto d-flex">
+                        <span class="info-name">BUT TC 1ère année</span>
+                    </div>
+                </div>
+
+                <div class="my-auto py-5 px-5">
+                    <span style="font-size: 32px; font-weight: 750">Ma première année d'études supérieures.</span><br/>
+                    <br/>
+                    <span style="font-size: 18px; font-weight: 550">En 2021, je suis entré en BUT Techniques de commercialisation ! Je souhaite en apprendre plus sur ma passion pour le marketing et avoir une formation assez concrète.</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-7" class="frame" data-frame-id="7">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">07</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-yellow mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+
+                <div class="mx-5 my-5">
+                    <div class="d-md-flex flex-md-row-reverse">
+                        <div class="col-md-8 d-flex flex-column">
+                            <div class="info-case mb-3">
+                                <span class="info-date mx-auto pe-md-5">2021-2022</span>
+                            </div>
+
+                            <div class="my-auto">
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/harry_potter/icon-1.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">Objectif : Proposer une offre marketing pour ouvrir une boutique Harry Potter à Castres en prenant en compte ce qui se fait sur le marché</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/harry_potter/icon-2.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">I. Analyse du marché national</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/harry_potter/icon-3.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">II. Analyse du micro-environnement</span>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/harry_potter/icon-4.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">III. Proposition d'offre</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column mt-md-0 mt-5 mx-3">
+                            <div class="mx-auto my-auto">
+                                <img width="100%" alt="" src="{{ asset('assets/images/formation/harry_potter/image.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Boutique Harry Potter : Implantation d'une boutique dans la ville de Castres. Groupe de 4.</span>
+            </div>
+        </div>
+
+        <div id="frame-8" class="frame" data-frame-id="8">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">08</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-blue mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+
+                <div class="mx-5 my-5">
+                    <div class="d-md-flex flex-md-row-reverse">
+                        <div class="col-md-8 d-flex flex-column">
+                            <div class="info-case mb-3">
+                                <span class="info-date mx-auto pe-md-5">2021-2022</span>
+                            </div>
+
+                            <div class="my-auto">
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/kit_ethique/icon-1.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">I. Réalisation d'un focus group avec des étudiants de l'IUT pour découvrir ce qu'ils auraient aimé avoir en début d'année.</span>
+                                </div>
+                                <div class="d-flex flex-row mb-4">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/kit_ethique/icon-2.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">II. Élaboration d'un kit éthique répondant aux besoins des étudiants.</span>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img class="my-auto" src="{{ asset('assets/images/formation/kit_ethique/icon-3.svg') }}" alt=""/>
+                                    <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">III. Élaboration d'un plan de communication pour promouvoir notre kit éthique auprès des étudiants, et de notre initiative auprès des acteurs régionaux, tels que l'Université Toulouse III.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column mt-md-0 mt-5 mx-3">
+                            <div class="mx-auto my-auto">
+                                <img width="100%" alt="" src="{{ asset('assets/images/formation/kit_ethique/image.svg') }}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Kit Ethique : création d'un kit d'étude éthique pour les futurs étudiants de première année de l'IUT. Groupe de 7.</span>
+            </div>
+        </div>
+
+        <div id="frame-9" class="frame" data-frame-id="9">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">09</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-red mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+                <div class="info-case mt-3 d-flex flex-column px-3 mx-auto">
+                    <span class="info-date">2021-2022</span>
+                </div>
+
+                <div class="py-5 my-auto">
+                    <div class="carrousel d-flex flex-row w-100">
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/nike/1.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/nike/2.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/nike/3.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/nike/4.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/nike/5.svg') }}" alt=""/>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Analyse des forces et faiblesses du géant Nike. Groupe de 2.</span>
+            </div>
+        </div>
+
+        <div id="frame-10" class="frame" data-frame-id="10">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">10</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column py-5">
+                <span class="neon-aqua mx-auto mt-5 text-center px-3">PROJETS SCOLAIRES MARQUANTS</span>
+                <div class="info-case mt-3 d-flex flex-column px-3 mx-auto">
+                    <span class="info-date">2021-2022</span>
+                </div>
+
+                <div class="py-5 my-auto">
+                    <div class="carrousel d-flex flex-row w-100">
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/1.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/2.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/3.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/4.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/5.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/6.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/7.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/8.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/9.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/10.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/11.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/12.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/13.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/14.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/15.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/16.svg') }}" alt=""/>
+                        <img class="carrousel-element" src="{{ asset('assets/images/formation/telemedecine/17.svg') }}" alt=""/>
+                    </div>
+                </div>
+
+                <span class="text-center mt-auto mx-auto" style="font-size: 24px; font-weight: 750">Etude de marché sur la télémédecine. Groupe de 2.</span>
+
+            </div>
+        </div>
+
+        <div id="frame-11" class="frame" data-frame-id="11">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">11</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column flex-lg-row pt-5">
+                <div class="col-lg-6 d-flex flex-column min-lg-h-100">
+                    <div class="info-case info-case-center my-auto ms-lg-auto me-auto me-lg-4">
+                        <span class="info-date mb-2">2020-2021</span>
+                        <span class="info-name mb-2">Terminale générale</span>
+                        <span class="info-details">Lycée François Mitterand (Moissac)</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column mx-lg-0 min-lg-h-100 pt-5 mt-auto mt-lg-0">
+                    <div class="bande mx-auto mx-lg-0 w-100 px-3">
+                        <span class="bande-hint">La dernière ligne droite avant le Baccalauréat</span><br/>
+                        <br/>
+                        <span class="bande-text">J'ai dû abandonner une option, j'ai choisi de laisser les mathématiques pour me concentrer sur les SES et la géopolitique !</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-12" class="frame" data-frame-id="12">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">12</span>
+            </div>
+
+            <div class="frame-content w-100 d-flex flex-column flex-lg-row pt-5">
+                <div class="col-lg-6 d-flex flex-column min-lg-h-100">
+                    <div class="info-case info-case-center my-auto ms-lg-auto me-auto me-lg-4">
+                        <span class="info-date mb-2">2019-2020</span>
+                        <span class="info-name mb-2">Première générale</span>
+                        <span class="info-details">Lycée François Mitterand (Moissac)</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column mx-lg-0 min-lg-h-100 pt-5 mt-auto mt-lg-0">
+                    <div class="bande mx-auto mx-lg-0 w-100 px-3">
+                        <span class="bande-hint">C'est l'année où je me suis spécialisé !</span><br/>
+                        <br/>
+                        <span class="bande-text">J'ai choisi de me spécialiser dans les matières suivantes :</span><br/>
+                        <br/>
+                        <span class="bande-text">- Mathématiques pour améliorer mon raisonnement logique.</span><br/>
+                        <br/>
+                        <span class="bande-text">- SES et géopolitique car je suis passionné par le monde qui m'entoure et j'aime me cultiver. Cette année-là, j'ai également commencé mes projets entrepreneuriaux.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

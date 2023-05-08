@@ -1,0 +1,18 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="65" height="66" viewBox="0 0 65 66">
+    <g id="invisible_box" data-name="invisible box">
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="65" height="66" fill="none"/>
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="65" height="66" fill="none"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="65" height="66" fill="none"/>
+    </g>
+    <g id="Layer_6" data-name="Layer 6" transform="translate(5 2)">
+        <g id="Groupe_7" data-name="Groupe 7">
+            <path id="Tracé_18" data-name="Tracé 18" d="M16,14h8a2,2,0,0,0,0-4H16a2,2,0,0,0,0,4Z" transform="translate(0.885 1.861)" fill="#ded1b0"/>
+            <path id="Tracé_19" data-name="Tracé 19" d="M16,22h8a2,2,0,0,0,0-4H16a2,2,0,0,0,0,4Z" transform="translate(0.885 5.721)" fill="#ded1b0"/>
+            <path id="Tracé_20" data-name="Tracé 20" d="M16,30h8a2,2,0,0,0,0-4H16a2,2,0,0,0,0,4Z" transform="translate(0.885 9.582)" fill="#ded1b0"/>
+            <path id="Tracé_21" data-name="Tracé 21" d="M30,14h2a2,2,0,0,0,0-4H30a2,2,0,0,0,0,4Z" transform="translate(7.219 1.861)" fill="#ded1b0"/>
+            <path id="Tracé_22" data-name="Tracé 22" d="M30,22h2a2,2,0,0,0,0-4H30a2,2,0,0,0,0,4Z" transform="translate(7.219 5.721)" fill="#ded1b0"/>
+            <path id="Tracé_23" data-name="Tracé 23" d="M30,30h2a2,2,0,0,0,0-4H30a2,2,0,0,0,0,4Z" transform="translate(7.219 9.582)" fill="#ded1b0"/>
+            <path id="Tracé_24" data-name="Tracé 24" d="M57.105,2H7.895A2.884,2.884,0,0,0,5,4.873V60.9a1.442,1.442,0,0,0,1.447,1.437,1.6,1.6,0,0,0,1.013-.431L16.579,55.3,22.8,61.908a1.455,1.455,0,0,0,2.026,0L32.5,55.3l7.671,6.609a1.455,1.455,0,0,0,2.026,0L48.421,55.3l9.118,6.609a1.6,1.6,0,0,0,1.013.431A1.442,1.442,0,0,0,60,60.9V4.873A2.884,2.884,0,0,0,57.105,2ZM54.211,52.426,51.895,50.7l-4.2-3.017L44.224,51.42l-3.329,3.448-4.632-3.879-3.763-3.3-3.763,3.3-4.632,3.879L20.776,51.42,17.3,47.685l-4.2,3.017-2.316,1.724V7.747H54.211Z" transform="translate(-5 -2)" fill="#ded1b0"/>
+        </g>
+    </g>
+</svg>

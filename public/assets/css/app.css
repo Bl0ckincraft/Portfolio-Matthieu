@@ -1,11 +1,19 @@
+@font-face {
+    font-family: 'Noto Sans Local';
+    src: url('../fonts/Noto Sans/NotoSans-Bold.ttf') format('truetype');
+}
+
 body {
     background: #24262B;
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans Local', sans-serif;
+    color: white;
     min-height: 100%;
     margin: 0!important;
     padding: 0!important;
     display: flex;
     flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 html {
@@ -53,7 +61,7 @@ header {
     transition: none!important;
 }
 
-.text-section span {
+.text-section span, .text-section p {
     color: white;
     font-weight: 550;
 }
@@ -181,50 +189,150 @@ header {
     transform: rotate(180deg);
 }
 
-.neon {
-    font-size: 48px;
+.neon-magenta {
+    font-size: 35px;
     font-weight: 900;
     color: rgb(255, 165, 220);
     text-shadow: 0 0 10px rgb(255, 165, 220),
-                 0 0 20px rgb(255, 165, 220),
-                 0 0 30px rgb(255, 165, 220),
-                 0 0 40px rgb(255, 60, 180),
-                 0 0 70px rgb(255, 60, 180),
-                 0 0 80px rgb(255, 60, 180),
-                 0 0 100px rgb(255, 60, 180),
-                 0 0 150px rgb(255, 60, 180);
-    animation: neon-animation 1s ease-in-out infinite alternate;
+    0 0 20px rgb(255, 165, 220),
+    0 0 30px rgb(255, 165, 220),
+    0 0 40px rgb(255, 60, 180),
+    0 0 70px rgb(255, 60, 180),
+    0 0 80px rgb(255, 60, 180),
+    0 0 100px rgb(255, 60, 180),
+    0 0 150px rgb(255, 60, 180);
 }
 
-@keyframes neon-animation {
-    from {
-        text-shadow: 0 0 10px rgb(255, 165, 220),
-                     0 0 20px rgb(255, 165, 220),
-                     0 0 30px rgb(255, 165, 220),
-                     0 0 40px rgb(255, 60, 180),
-                     0 0 70px rgb(255, 60, 180),
-                     0 0 80px rgb(255, 60, 180),
-                     0 0 100px rgb(255, 60, 180),
-                     0 0 150px rgb(255, 60, 180);
-    } to {
-        text-shadow: 0 0 20px rgb(255, 165, 220),
-                     0 0 30px rgb(255, 165, 220),
-                     0 0 40px rgb(255, 60, 180),
-                     0 0 70px rgb(255, 60, 180),
-                     0 0 80px rgb(255, 60, 180),
-                     0 0 100px rgb(255, 60, 180),
-                     0 0 150px rgb(255, 60, 180),
-                     0 0 180px rgb(255, 60, 180);
-    }
+.neon-wheat {
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(222, 209, 176);
+    text-shadow: 0 0 10px rgb(222, 209, 176),
+    0 0 20px rgb(222, 209, 176),
+    0 0 30px rgb(222, 209, 176),
+    0 0 40px rgb(232, 199, 146),
+    0 0 70px rgb(232, 199, 146),
+    0 0 80px rgb(232, 199, 146),
+    0 0 100px rgb(232, 199, 146),
+    0 0 150px rgb(232, 199, 146);
+}
+
+.neon-orange {
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(255, 148, 41);
+    text-shadow: 0 0 10px rgb(255, 148, 41),
+    0 0 20px rgb(255, 148, 41),
+    0 0 30px rgb(255, 148, 41),
+    0 0 40px rgb(232, 115, 0),
+    0 0 70px rgb(232, 115, 0),
+    0 0 80px rgb(232, 115, 0),
+    0 0 100px rgb(232, 115, 0),
+    0 0 150px rgb(232, 115, 0);
+}
+
+.neon-aqua {
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(166, 252, 255);
+    text-shadow: 0 0 10px rgb(166, 252, 255),
+                 0 0 20px rgb(166, 252, 255),
+                 0 0 30px rgb(166, 252, 255),
+                 0 0 40px rgb(66, 228, 232),
+                 0 0 70px rgb(66, 228, 232),
+                 0 0 80px rgb(66, 228, 232),
+                 0 0 100px rgb(66, 228, 232),
+                 0 0 150px rgb(66, 228, 232);
+}
+
+.neon-yellow {
+     font-size: 35px;
+     font-weight: 900;
+     color: rgb(255, 197, 110);
+     text-shadow: 0 0 10px rgb(255, 197, 110),
+     0 0 20px rgb(255, 197, 110),
+     0 0 30px rgb(255, 197, 110),
+     0 0 40px rgb(231, 159, 54),
+     0 0 70px rgb(231, 159, 54),
+     0 0 80px rgb(231, 159, 54),
+     0 0 100px rgb(231, 159, 54),
+     0 0 150px rgb(231, 159, 54);
+ }
+
+.neon-blue {
+      font-size: 35px;
+      font-weight: 900;
+      color: rgb(142, 162, 255);
+      text-shadow: 0 0 10px rgb(142, 162, 255),
+      0 0 20px rgb(142, 162, 255),
+      0 0 30px rgb(142, 162, 255),
+      0 0 40px rgb(84, 105, 222),
+      0 0 70px rgb(84, 105, 222),
+      0 0 80px rgb(84, 105, 222),
+      0 0 100px rgb(84, 105, 222),
+      0 0 150px rgb(84, 105, 222);
+}
+
+.neon-red {
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(208, 58, 32);
+    text-shadow: 0 0 10px rgb(208, 58, 32),
+    0 0 20px rgb(208, 58, 32),
+    0 0 30px rgb(208, 58, 32),
+    0 0 40px rgb(161, 20, 0),
+    0 0 70px rgb(161, 20, 0),
+    0 0 80px rgb(161, 20, 0),
+    0 0 100px rgb(161, 20, 0),
+    0 0 150px rgb(161, 20, 0);
+}
+
+.neon-electric-red {
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(251, 13, 88);
+    text-shadow: 0 0 10px rgb(251, 13, 88),
+    0 0 20px rgb(251, 13, 88),
+    0 0 30px rgb(251, 13, 88),
+    0 0 40px rgb(128, 0, 38),
+    0 0 70px rgb(128, 0, 38),
+    0 0 80px rgb(128, 0, 38),
+    0 0 100px rgb(128, 0, 38),
+    0 0 150px rgb(128, 0, 38);
 }
 
 .info-case {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+}
+
+.info-case-center {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+}
+
+.info-case-full {
+    max-width: 1200px;
+}
+
+.info-case-full .info-details {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-case-full .info-date {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-case-full .info-name {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .info-case .info-date {
@@ -253,6 +361,19 @@ header {
     max-width: calc(100vw - 10px);
 }
 
+.diapo .carrousel {
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formation .carrousel {
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100vw - 10px);
+}
+
 .carrousel .carrousel-element {
     margin-top: auto;
     margin-bottom: auto;
@@ -261,6 +382,7 @@ header {
     max-width: 800px;
     margin-left: 30px;
     width: calc(100vw - 100px);
+    min-width: 400px;
 }
 
 .carrousel .carrousel-element:first-of-type {
@@ -272,7 +394,7 @@ header {
     flex-direction: column;
 }
 
-#frame-container .missions .neon {
+#frame-container .missions .neon-magenta {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -291,6 +413,7 @@ header {
 
 #frame-container .frame-indicator .indicator {
     font-size: 40px;
+    word-break: keep-all;
     font-weight: 800;
     color: white;
 }
@@ -309,6 +432,104 @@ header {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.formation #frame-1 {
+    background-image: url("../images/formation/frame-1-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.formation #frame-2 {
+    background-image: url("../images/formation/frame-2-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-3 {
+    background-image: url("../images/formation/frame-3-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-4 {
+    background-image: url("../images/formation/frame-4-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-5 {
+    background-image: url("../images/formation/frame-5-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-6 {
+    background-image: url("../images/formation/frame-6-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.formation #frame-7 {
+    background-image: url("../images/formation/frame-7-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-8 {
+    background-image: url("../images/formation/frame-8-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-9 {
+    background-image: url("../images/formation/frame-9-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-10 {
+    background-image: url("../images/formation/frame-10-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formation #frame-11 {
+    background-image: url("../images/formation/frame-11-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.formation #frame-12 {
+    background-image: url("../images/formation/frame-12-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.moodboard #moodboard-first img, .moodboard #moodboard-second img {
+    width: 100%;
+    max-height: 90vh;
 }
 
 .scroll-button {
@@ -345,15 +566,40 @@ header {
 .skills .skill-title {
     color: #FFFFFF;
     font-weight: 750;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
 }
 
 .skills .skill-desc {
     color: #FFFFFF;
     font-weight: 350;
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
+}
+
+.experiences .frame-content .inside {
+    min-height: 100vh;
+    background-image: url("../images/experiences/inside/inside-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.experiences .frame-content .actions {
+    background-image: url("../images/experiences/inside/actions-bg.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.experiences .frame-content .diapo {
+    min-height: 100vh;
+    background-image: url("../images/experiences/inside/diapo-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .skills #frame-1 {
@@ -391,6 +637,119 @@ header {
     background-size: cover;
 }
 
+.shorts-container .short-container .short {
+    width: 100%;
+    max-height: 90vh;
+    aspect-ratio: 625/1111;
+}
+
+.shorts-container {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bande {
+    padding-top: 350px;
+    padding-bottom: 100px;
+    max-width: 650px;
+    background-color: rgba(255, 255, 255, 0.06);
+    height: 100%;
+    min-height: 80vh;
+}
+
+.bande .bande-hint {
+    font-size: 16px;
+    font-weight: 750;
+}
+
+.bande .bande-text {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.little-justify {
+    text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+    .min-lg-h-100 {
+        min-height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .little-justify {
+        text-align: left;
+    }
+
+    .neon-magenta {
+        font-size: 48px;
+    }
+
+    .neon-wheat {
+        font-size: 48px;
+    }
+
+    .neon-orange {
+        font-size: 48px;
+    }
+
+    .neon-aqua {
+        font-size: 48px;
+    }
+
+    .neon-yellow {
+        font-size: 48px;
+    }
+
+    .neon-blue {
+        font-size: 48px;
+    }
+
+    .neon-red {
+        font-size: 48px;
+    }
+
+    .neon-electric-red {
+        font-size: 48px;
+    }
+
+    .skills .skill-title {
+        color: #FFFFFF;
+        font-weight: 750;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .skills .skill-desc {
+        color: #FFFFFF;
+        font-weight: 350;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .md-border-right {
+        border-right: 1px white solid;
+    }
+
+    .info-case-full .info-details {
+        text-align: left;
+        margin-right: inherit;
+        margin-left: inherit;
+    }
+
+    .info-case-full .info-date {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .info-case-full .info-name {
+        text-align: right;
+        margin-right: inherit;
+        margin-left: auto;
+    }
+}
+
 @media screen and (min-width: 1320px) {
     #svg {
         z-index: 2;
@@ -415,13 +774,16 @@ header {
 
     .info-case .info-name {
         font-size: 40px;
-        margin-left: 65px;
         line-height: 40px;
-        text-align: right;
     }
 
     .info-case .info-details {
         font-size: 24px;
+    }
+
+    .info-case-center .info-name {
+        margin-left: 65px;
+        text-align: right;
     }
 
     #frame-container .frame-indicator {
@@ -434,7 +796,7 @@ header {
         flex-direction: row;
     }
 
-    #frame-container .missions .neon {
+    #frame-container .missions .neon-magenta {
         margin: auto 1.5rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -447,6 +809,11 @@ header {
     .missions .carrousel {
         max-width: calc(100vw - 250px);
     }
+
+
+    .formation .carrousel {
+        max-width: calc(100vw - 250px);
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -457,7 +824,7 @@ header {
 }
 
 /* media used for navbar, based on bootstrap navbar ('.navbar-expand-md') */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1260px) {
     .navbar-expand-custom {
         flex-wrap:nowrap;
         justify-content:flex-start

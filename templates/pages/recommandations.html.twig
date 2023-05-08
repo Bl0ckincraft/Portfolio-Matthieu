@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% set footer = true %}
+
+{% block content %}
+    <div class="d-flex flex-column">
+        <div class="padding-top-navbar"></div>
+
+        <span class="neon-electric-red mt-5 px-5 mx-auto text-center">LETTRES DE RECOMMANDATION PRÉPA ATS</span>
+
+        <div class="my-5 mx-5 px-md-5 d-flex flex-column flex-md-row">
+            <div class="col-md-6 px-md-5 py-4 my-md-auto d-flex flex-column">
+                <img class="my-auto mx-auto" src="{{ asset('assets/images/letters/1.svg') }}" alt="" width="100%" style="max-width: 500px; max-height: 90vh"/>
+            </div>
+            <div class="col-md-6 px-md-5 py-4 my-md-auto d-flex flex-column">
+                <img class="my-auto mx-auto" src="{{ asset('assets/images/letters/2.svg') }}" alt="" width="100%" style="max-width: 500px; max-height: 90vh"/>
+            </div>
+        </div>
+    </div>
+{% endblock %}
