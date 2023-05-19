@@ -36,7 +36,6 @@ class PagesController extends AbstractController
     #[Route('/centres-dinterets', name: 'app_interests')]
     public function interests(): Response
     {
-        return $this->render('errors/soon.html.twig');
         return $this->render('pages/interests.html.twig');
     }
 

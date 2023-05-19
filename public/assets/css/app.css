@@ -193,9 +193,9 @@ header {
     font-size: 35px;
     font-weight: 900;
     color: rgb(255, 165, 220);
-    text-shadow: 0 0 10px rgb(255, 165, 220),
-    0 0 20px rgb(255, 165, 220),
-    0 0 30px rgb(255, 165, 220),
+    text-shadow: 0 0 10px rgb(255, 60, 180),
+    0 0 20px rgb(255, 60, 180),
+    0 0 30px rgb(255, 60, 180),
     0 0 40px rgb(255, 60, 180),
     0 0 70px rgb(255, 60, 180),
     0 0 80px rgb(255, 60, 180),
@@ -207,9 +207,9 @@ header {
     font-size: 35px;
     font-weight: 900;
     color: rgb(222, 209, 176);
-    text-shadow: 0 0 10px rgb(222, 209, 176),
-    0 0 20px rgb(222, 209, 176),
-    0 0 30px rgb(222, 209, 176),
+    text-shadow: 0 0 10px rgb(232, 199, 146),
+    0 0 20px rgb(232, 199, 146),
+    0 0 30px rgb(232, 199, 146),
     0 0 40px rgb(232, 199, 146),
     0 0 70px rgb(232, 199, 146),
     0 0 80px rgb(232, 199, 146),
@@ -221,9 +221,9 @@ header {
     font-size: 35px;
     font-weight: 900;
     color: rgb(255, 148, 41);
-    text-shadow: 0 0 10px rgb(255, 148, 41),
-    0 0 20px rgb(255, 148, 41),
-    0 0 30px rgb(255, 148, 41),
+    text-shadow: 0 0 10px rgb(232, 115, 0),
+    0 0 20px rgb(232, 115, 0),
+    0 0 30px rgb(232, 115, 0),
     0 0 40px rgb(232, 115, 0),
     0 0 70px rgb(232, 115, 0),
     0 0 80px rgb(232, 115, 0),
@@ -235,9 +235,9 @@ header {
     font-size: 35px;
     font-weight: 900;
     color: rgb(166, 252, 255);
-    text-shadow: 0 0 10px rgb(166, 252, 255),
-                 0 0 20px rgb(166, 252, 255),
-                 0 0 30px rgb(166, 252, 255),
+    text-shadow: 0 0 10px rgb(66, 228, 232),
+                 0 0 20px rgb(66, 228, 232),
+                 0 0 30px rgb(66, 228, 232),
                  0 0 40px rgb(66, 228, 232),
                  0 0 70px rgb(66, 228, 232),
                  0 0 80px rgb(66, 228, 232),
@@ -249,9 +249,9 @@ header {
      font-size: 35px;
      font-weight: 900;
      color: rgb(255, 197, 110);
-     text-shadow: 0 0 10px rgb(255, 197, 110),
-     0 0 20px rgb(255, 197, 110),
-     0 0 30px rgb(255, 197, 110),
+     text-shadow: 0 0 10px rgb(231, 159, 54),
+     0 0 20px rgb(231, 159, 54),
+     0 0 30px rgb(231, 159, 54),
      0 0 40px rgb(231, 159, 54),
      0 0 70px rgb(231, 159, 54),
      0 0 80px rgb(231, 159, 54),
@@ -263,9 +263,9 @@ header {
       font-size: 35px;
       font-weight: 900;
       color: rgb(142, 162, 255);
-      text-shadow: 0 0 10px rgb(142, 162, 255),
-      0 0 20px rgb(142, 162, 255),
-      0 0 30px rgb(142, 162, 255),
+      text-shadow: 0 0 10px rgb(84, 105, 222),
+      0 0 20px rgb(84, 105, 222),
+      0 0 30px rgb(84, 105, 222),
       0 0 40px rgb(84, 105, 222),
       0 0 70px rgb(84, 105, 222),
       0 0 80px rgb(84, 105, 222),
@@ -277,9 +277,9 @@ header {
     font-size: 35px;
     font-weight: 900;
     color: rgb(208, 58, 32);
-    text-shadow: 0 0 10px rgb(208, 58, 32),
-    0 0 20px rgb(208, 58, 32),
-    0 0 30px rgb(208, 58, 32),
+    text-shadow: 0 0 10px rgb(161, 20, 0),
+    0 0 20px rgb(161, 20, 0),
+    0 0 30px rgb(161, 20, 0),
     0 0 40px rgb(161, 20, 0),
     0 0 70px rgb(161, 20, 0),
     0 0 80px rgb(161, 20, 0),
@@ -291,9 +291,9 @@ header {
     font-size: 28px;
     font-weight: 900;
     color: rgb(251, 13, 88);
-    text-shadow: 0 0 10px rgb(251, 13, 88),
-    0 0 20px rgb(251, 13, 88),
-    0 0 30px rgb(251, 13, 88),
+    text-shadow: 0 0 10px rgb(128, 0, 38),
+    0 0 20px rgb(128, 0, 38),
+    0 0 30px rgb(128, 0, 38),
     0 0 40px rgb(128, 0, 38),
     0 0 70px rgb(128, 0, 38),
     0 0 80px rgb(128, 0, 38),
@@ -415,6 +415,29 @@ header {
     word-break: keep-all;
     font-weight: 800;
     color: white;
+}
+
+.interests #frame-1 {
+    background-image: url("../images/interests/aviron/background.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.interests #frame-2 {
+    background-image: url("../images/interests/parkour/background.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.interests #frame-3 {
+    background-image: url("../images/interests/kickboxing/background.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .experiences #frame-1 {
@@ -546,6 +569,8 @@ header {
     color: white;
     cursor: pointer;
     padding: 10px 35px 10px 35px;
+
+    display: none;
 }
 
 .scroll-button:hover {
@@ -669,6 +694,10 @@ header {
     text-align: justify;
 }
 
+.interests .travel-image {
+    max-width: calc(100vw - 130px);
+}
+
 @media screen and (min-width: 992px) {
     .min-lg-h-100 {
         min-height: 100%;
@@ -676,6 +705,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+    .w-md-auto {
+        width: auto!important;
+    }
+
     .little-justify {
         text-align: left;
     }
@@ -783,6 +816,14 @@ header {
     .info-case-center .info-name {
         margin-left: 65px;
         text-align: right;
+    }
+
+    .interests .right-side-image {
+        max-width: calc(100vw - 100px);
+    }
+
+    .interests .travel-image {
+        max-width: min(calc(100vw - 130px), 600px);
     }
 
     #frame-container .frame-indicator {

@@ -1,0 +1,14 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g id="invisible_box" data-name="invisible box">
+        <rect id="Rectangle_56" data-name="Rectangle 56" width="48" height="48" fill="none"/>
+    </g>
+    <g id="icons_Q2" data-name="icons Q2">
+        <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(12 10)" fill="red"/>
+        <circle id="Ellipse_13" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(12 20)" fill="red"/>
+        <circle id="Ellipse_14" data-name="Ellipse 14" cx="2" cy="2" r="2" transform="translate(17 15)" fill="red"/>
+        <circle id="Ellipse_15" data-name="Ellipse 15" cx="2" cy="2" r="2" transform="translate(34 32)" fill="red"/>
+        <circle id="Ellipse_16" data-name="Ellipse 16" cx="2" cy="2" r="2" transform="translate(34 22)" fill="red"/>
+        <circle id="Ellipse_17" data-name="Ellipse 17" cx="2" cy="2" r="2" transform="translate(29 27)" fill="red"/>
+        <path id="Tracé_107" data-name="Tracé 107" d="M41.7,20A2,2,0,0,0,44,18V6a2,2,0,0,0-2-2H30a2,2,0,0,0-2,2.3A2.1,2.1,0,0,0,30.1,8h7.1L8,37.2V6A2,2,0,0,0,4,6V44H42a2,2,0,0,0,0-4H10.8L40,10.8v7.1A2.1,2.1,0,0,0,41.7,20Z" fill="red"/>
+    </g>
+</svg>

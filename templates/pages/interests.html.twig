@@ -1,5 +1,196 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
+{% set footer = true %}
 
+{% block content %}
+    <div id="frame-container" class="interests">
+        <div id="frame-1" class="frame" data-frame-id="1">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">01</span>
+            </div>
+
+            <div class="frame-content w-100">
+                <div class="padding-top-navbar"></div>
+                <div class="info-case info-case-center mt-3">
+                    <span class="info-date">2014 - 2018</span>
+                    <span class="info-name">Aviron</span>
+                    <span class="info-details">Sport d'équipe en compétition</span>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row flex-sm-wrap my-5">
+                    <div class="d-flex col-sm-6 col-md-3">
+                        <div class="d-flex flex-column my-auto mx-auto">
+                            <span style="font-size: 18px" class="text-center">Esprit de compétition</span>
+                            <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/1.svg') }}"/>
+                        </div>
+                    </div>
+                    <div class="d-flex col-sm-6 col-md-3">
+                        <div class="d-flex flex-column my-auto mx-auto">
+                            <span style="font-size: 18px" class="text-center">Cohésion</span>
+                            <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/2.svg') }}"/>
+                        </div>
+                    </div>
+                    <div class="d-flex col-sm-6 col-md-3">
+                        <div class="d-flex flex-column my-auto mx-auto">
+                            <span style="font-size: 18px" class="text-center">Communication</span>
+                            <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/3.svg') }}"/>
+                        </div>
+                    </div>
+                    <div class="d-flex col-sm-6 col-md-3">
+                        <div class="d-flex flex-column my-auto mx-auto">
+                            <span style="font-size: 18px" class="text-center">Objectif commun</span>
+                            <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/4.svg') }}"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column pt-md-5">
+                    <span class="neon-wheat text-center">MOMENTS MARQUANTS</span>
+
+                    <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 mx-auto">
+                        <img class="w-100 w-md-auto mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/5.svg') }}"/>
+                        <img class="w-100 w-md-auto mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/6.svg') }}"/>
+                        <img class="w-100 w-md-auto mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/5.svg') }}"/>
+                        <img class="w-100 w-md-auto mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/aviron/6.svg') }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-2" class="frame" data-frame-id="2">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">02</span>
+            </div>
+
+            <div class="frame-content w-100">
+                <div class="info-case info-case-center mt-3">
+                    <span class="info-date">2016 - 2019</span>
+                    <span class="info-name">Parkour Urbain</span>
+                    <span class="info-details">Sport individuel à sensations</span>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row flex-lg-wrap my-5">
+                    <div class="col-lg-8 my-lg-auto">
+                        <div class="d-flex flex-column flex-sm-row flex-sm-wrap my-5">
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Coordination<br/>Equilibre<br/>Resistance physique</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/parkour/1.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Prise de risques calculés</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/parkour/2.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Adaptation</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/parkour/3.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Créativité pour surmonter les obstacles</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/parkour/4.svg') }}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column right-side-image my-lg-auto">
+                        <img class="px-5 py-5 pe-lg-0 pb-lg-0 ps-lg-3 pt-lg-3" alt="" src="{{ asset('assets/images/interests/parkour/5.svg') }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-3" class="frame" data-frame-id="3">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">03</span>
+            </div>
+
+            <div class="frame-content w-100">
+                <div class="info-case info-case-center mt-3">
+                    <span class="info-date">2020 - 2022</span>
+                    <span class="info-name">Kickboxing</span>
+                    <span class="info-details">Sport individuel</span>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row flex-lg-wrap my-5">
+                    <div class="col-lg-8 my-lg-auto">
+                        <div class="d-flex flex-column flex-sm-row flex-sm-wrap my-5">
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Discipline</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/kickboxing/1.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Persevérance</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/kickboxing/2.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Travail</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/kickboxing/3.svg') }}"/>
+                                </div>
+                            </div>
+                            <div class="d-flex col-sm-6">
+                                <div class="d-flex flex-column-reverse my-auto mx-auto">
+                                    <span style="font-size: 18px" class="text-center">Compétition</span>
+                                    <img class="mx-auto px-3 py-3" alt="" src="{{ asset('assets/images/interests/kickboxing/4.svg') }}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column right-side-image my-lg-auto">
+                        <img class="px-5 py-5 px-lg-3 py-lg-3" alt="" src="{{ asset('assets/images/interests/kickboxing/5.svg') }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-4" class="frame" data-frame-id="4">
+            <div class="frame-indicator px-3 py-3">
+                <span class="indicator my-auto">04</span>
+            </div>
+
+            <div class="frame-content w-100">
+                <div class="info-case info-case-center mt-3">
+                    <span class="info-date">2015 - 2022</span>
+                    <span class="info-name">Voyages</span>
+                </div>
+
+                <div class="my-4 mx-5">
+                    <p class="text-center">Dans le cadre privée, j'ai eu la chance de voyager dans plusieurs villes d'Europe telles que Londres, Barcelone, Berlin, Cologne, Bruxelles, Amsterdam, Genève, Naples, ce qui m'a permis de découvrir de nouvelles cultures et de m'immerger dans des environnements différents. Grâce à ces voyages, j'ai également amélioré mes compétences linguistiques en pratiquant l'anglais et l'espagnol  tout en renforçant mon sens de l'adaptation et ma capacité à m'ouvrir à de nouvelles expériences.</p>
+                </div>
+
+                <div class="d-flex flex-column mx-3">
+                    <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 mx-auto">
+                        <div class="col-md-6 d-flex flex-column travel-image mx-auto">
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/1.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/2.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/3.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/4.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/5.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/6.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/7.svg') }}"/>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column travel-image mx-auto">
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/8.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/9.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/10.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/11.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/12.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/13.svg') }}"/>
+                            <img class="px-3 py-3" alt="" src="{{ asset('assets/images/interests/voyages/14.svg') }}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
