@@ -307,6 +307,31 @@ header {
     padding: 10px;
 }
 
+.info-case-reverse {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.info-case-reverse .info-date {
+    color: rgba(200, 200, 200, 1);
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.info-case-reverse .info-name {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.info-case-reverse .info-details {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .info-case-center {
     width: fit-content;
     margin-left: auto;
@@ -330,6 +355,24 @@ header {
 }
 
 .info-case-full .info-name {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-case-line .info-details {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-case-line .info-date {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-case-line .info-name {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -577,6 +620,60 @@ header {
     background: linear-gradient(90deg, rgba(255,24,85,1) 0%, rgba(255,45,137,1) 50%, rgba(255,65,188,1) 100%);
 }
 
+.projects .button-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+}
+
+.projects .button-icon-padding {
+    padding-left: 32px;
+}
+
+.onerun-button {
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgba(252,161,4,1) 0%, rgba(246,93,45,1) 100%);
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    width: 235px;
+    height: 35px;
+}
+
+.onerun-button:hover {
+    background: linear-gradient(90deg, rgba(255,181,24,1) 0%, rgba(255,113,65,1) 100%);
+}
+
+.onenight-button {
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgba(252,4,161,1) 0%, rgba(246,93,45,1) 100%);
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    width: 235px;
+    height: 35px;
+}
+
+.onenight-button:hover {
+    background: linear-gradient(90deg, rgba(255,24,181,1) 0%, rgba(255,113,65,1) 100%);
+}
+
 .experiences .post-leclerc {
     width: 100%;
 }
@@ -661,7 +758,45 @@ header {
     background-size: cover;
 }
 
-.shorts-container .short-container .short {
+.projects #frame-1 .one-run-top {
+    background-image: url("../images/projects/onerun/background-1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projects #frame-1 .one-run-bottom {
+    background-image: url("../images/projects/onerun/background-2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.projects #frame-2 {
+    background-image: url("../images/projects/onenight/background.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projects #frame-3 .ricci-milano-top {
+    background-image: url("../images/projects/ricci-milano/background-1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.projects #frame-3 .ricci-milano-bottom {
+    background-image: url("../images/projects/ricci-milano/background-2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.short-container .short {
     width: 100%;
     max-height: 90vh;
     aspect-ratio: 625/1111;
@@ -705,6 +840,16 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+    .projects .button-icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+    }
+
+    .projects .button-icon-padding {
+        padding-left: 58px;
+    }
+
     .w-md-auto {
         width: auto!important;
     }
@@ -763,6 +908,24 @@ header {
         border-right: 1px white solid;
     }
 
+    .info-case-reverse .info-details {
+        text-align: left;
+        margin-right: inherit;
+        margin-left: inherit;
+    }
+
+    .info-case-reverse .info-date {
+        text-align: right;
+        margin-right: inherit;
+        margin-left: auto;
+    }
+
+    .info-case-reverse .info-name {
+        text-align: left;
+        margin-right: inherit;
+        margin-left: auto;
+    }
+
     .info-case-full .info-details {
         text-align: left;
         margin-right: inherit;
@@ -779,6 +942,29 @@ header {
         text-align: right;
         margin-right: inherit;
         margin-left: auto;
+    }
+
+    .info-case-line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-case-line .info-date {
+        margin-left: auto;
+        margin-right: inherit;
+        margin-top: 1rem;
+        margin-bottom: inherit;
+    }
+
+    .info-case-line .info-name {
+        margin-right: auto;
+        margin-left: inherit;
+        margin-top: auto;
+        margin-bottom: 1rem;
+    }
+
+    .info-case-line .info-details {
+        margin: inherit;
     }
 }
 

@@ -52,12 +52,40 @@ if (document.location.pathname === ROUTES['app_home']) {
     setInterval(moveButtons, 10);
 }
 
-var frameContainer = document.getElementById("frame-container");
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
 
-if (frameContainer !== null) {
-    function changeContentOnScroll() {
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
 
-    }
-
-    window.addEventListener("scroll", changeContentOnScroll);
+    window.requestAnimationFrame(step);
 }
+
+
+const incrementObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            let elem = entry.target;
+
+            let start = Number.parseInt(elem.dataset.incrementStart);
+            let end = Number.parseInt(elem.dataset.incrementEnd);
+
+            animateValue(elem, start, end, 1200)
+
+            observer.unobserve(elem);
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", e => {
+    document.querySelectorAll(".increment-number").forEach(element => {
+        incrementObserver.observe(element);
+    });
+})
+

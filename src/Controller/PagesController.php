@@ -23,7 +23,6 @@ class PagesController extends AbstractController
     #[Route('/projets-entrepreneuriaux', name: 'app_projects')]
     public function projects(): Response
     {
-        return $this->render('errors/soon.html.twig');
         return $this->render('pages/projects.html.twig');
     }
 
@@ -43,13 +42,6 @@ class PagesController extends AbstractController
     public function skills(): Response
     {
         return $this->render('pages/skills.html.twig');
-    }
-
-    #[Route('/contact', name: 'app_contact')]
-    public function contact(): Response
-    {
-        return $this->render('errors/soon.html.twig');
-        return $this->render('pages/contact.html.twig');
     }
 
     #[Route('/recommandations', name: 'app_recommandations')]

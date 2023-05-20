@@ -1,5 +1,274 @@
 {% extends 'base.html.twig' %}
 
-{% block content %}
+{% set footer = true %}
 
+{% block content %}
+    <div id="frame-container" class="projects">
+        <div id="frame-1" class="frame" data-frame-id="1">
+            <div class="d-flex flex-column frame-content w-100">
+                <div class="min-vh-100 one-run-top d-flex flex-column">
+                    <div class="padding-top-navbar"></div>
+
+                    <div class="my-3 mx-3 d-flex flex-column">
+                        <span class="neon-orange text-center mx-auto">APPLICATION DE PARTAGE DE COURSE À PIEDS</span>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row flex-md-wrap mx-auto">
+                        <div class="info-case ps-0 my-auto pb-0 pb-md-3">
+                            <span class="info-date">2022-2023</span>
+                        </div>
+                        <div class="info-case ps-0 my-auto ps-md-3">
+                            <span class="info-name">OneRun</span>
+                        </div>
+                    </div>
+
+                    <div style="max-width: 1300px" class="d-flex flex-column my-5 py-5 mx-auto">
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 my-md-3">
+                            <div class="col-md-6 col-lg-5 d-flex flex-column my-auto px-4">
+                                <div class="mx-auto d-flex flex-row">
+                                    <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-1.svg') }}"/>
+                                    <span class="my-auto onerun-button ms-3">Business Model CANVA</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 my-auto mt-3 mt-md-0 px-4 px-lg-5 text-center text-md-start">
+                                <span>Création d'un modèle économique détaillé pour l'entreprise, qui comprend des informations sur les sources de revenus, les coûts, les partenaires clés et les canaux de distribution.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 my-md-3">
+                            <div class="col-md-6 col-lg-5 d-flex flex-column my-auto px-4">
+                                <div class="mx-auto d-flex flex-row">
+                                    <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-2.svg') }}"/>
+                                    <span class="my-auto ms-3 text-center" style="color: rgb(246,100,40)">Pitch et obtention du statut national étudiant entrepreneur</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 my-auto mt-3 mt-md-0 px-4 px-lg-5 text-center text-md-start">
+                                <span>Présentation et de validation du projet auprès d'un  jury pour obtenir des des ressources (aide, accompagnement) et travailler sur le projet avec mon IUT</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 my-md-3">
+                            <div class="col-md-6 col-lg-5 d-flex flex-column my-auto px-4">
+                                <div class="mx-auto d-flex flex-row">
+                                    <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-3.svg') }}"/>
+                                    <span class="my-auto onerun-button ms-3">Étude de marché</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 my-auto mt-3 mt-md-0 px-4 px-lg-5 text-center text-md-start">
+                                <span>Recherche et d'analyse des tendances du marché et des besoins des clients potentiels</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 my-md-3">
+                            <div class="col-md-6 col-lg-5 d-flex flex-column my-auto px-4">
+                                <div class="mx-auto d-flex flex-row">
+                                    <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-4.svg') }}"/>
+                                    <span class="my-auto onerun-button ms-3">Focus Group</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 my-auto mt-3 mt-md-0 px-4 px-lg-5 text-center text-md-start">
+                                <span>Discussion avec un petit groupe de consommateurs potentiels pour obtenir des commentaires et des idées sur le service proposé</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-5 my-md-3">
+                            <div class="col-md-6 col-lg-5 d-flex flex-column my-auto px-4">
+                                <div class="mx-auto d-flex flex-row">
+                                    <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-5.svg') }}"/>
+                                    <span class="my-auto onerun-button ms-3">Cahier des charges</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 my-auto mt-3 mt-md-0 px-4 px-lg-5 text-center text-md-start">
+                                <span>Définition des spécifications du produit ou du service, y compris ses fonctionnalités et ses exigences techniques</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-vh-100 one-run-bottom d-flex flex-column">
+                    <div class="d-flex flex-column flex-lg-row flex-lg-wrap h-100">
+                        <div style="max-width: 1100px" class="col-xl-8 d-flex flex-column mx-auto px-5 pb-5">
+                            <div class="d-flex flex-column mb-5 mt-4">
+                                <div class="info-case info-case-line my-auto pt-5">
+                                    <span class="info-date">2022-2023</span>
+                                    <span class="info-details p-3"><img alt="" src="{{ asset('assets/images/projects/onerun/logo.svg') }}"/></span>
+                                    <span class="info-name">OneRun</span>
+                                </div>
+                            </div>
+
+                            <div style="max-width: 700px" class="d-flex flex-row mx-auto">
+                                <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-6.svg') }}"/>
+
+                                <div class="my-auto d-flex flex-column button-icon-padding">
+                                    <span style="color: rgb(246,100,40)">Diffusion d’une publicité de préinscription sur Facebook et Instagram</span>
+                                    <span>Test et d'évaluation de l'intérêt des consommateurs potentiels pour le service proposé</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column my-5 py-5">
+                                <div class="d-flex flex-column flex-md-row flex-md-wrap">
+                                    <div class="col-md-6 d-flex flex-column my-auto">
+                                        <div class="mx-auto d-flex flex-row">
+                                            <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-7.svg') }}"/>
+                                            <span class="my-auto onerun-button ms-3">Business Model CANVA</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 my-auto mt-3 mt-md-0 text-center text-md-start">
+                                        <span>Création d'un modèle économique détaillé pour l'entreprise, qui comprend des informations sur les sources de revenus, les coûts, les partenaires clés et les canaux de distribution.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row mx-auto">
+                                <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onerun/icon-8.svg') }}"/>
+                                <span class="my-auto ms-3">Suite du projet à venir...</span>
+                            </div>
+                        </div>
+
+                        <div style="max-width: 470px" class="col-xl-4 d-flex flex-column mb-5 mb-xl-0 short-container mx-auto mx-xl-0">
+                            <iframe style="max-height: calc(90vh - 72px)" class="my-auto short" src="https://www.youtube.com/embed/Dl4CM4G8QnU" title="Publicité pré-inscriptions OneRun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-2" class="frame" data-frame-id="2">
+            <div class="frame-content w-100 d-flex flex-column">
+                <div class="my-5 mx-3 d-flex flex-column">
+                    <span class="neon-magenta text-center mx-auto">APPLICATION DE PARTAGE DE SOIRÉES</span>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row flex-lg-wrap h-100">
+                    <div style="max-width: 800px" class="col-lg-8 d-flex flex-column mx-auto px-5 pb-5 my-auto">
+                        <div class="button-icon-padding d-flex flex-column flex-md-row flex-md-wrap mb-5">
+                            <div class="info-case ps-0 my-auto pb-0">
+                                <span class="info-name">OneNight</span>
+                            </div>
+                            <div class="info-case ps-0 ps-md-3 my-auto">
+                                <span class="info-date">2022-2023</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row">
+                            <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onenight/icon-1.svg') }}"/>
+                            <a class="my-auto onenight-button">Minimum Viable Brand</a>
+                        </div>
+
+                        <div class="button-icon-padding mt-2 mb-3 d-flex flex-column">
+                            <span>Développement de l'image de marque et du concept de la future entreprise</span>
+                        </div>
+
+                        <div class="d-flex flex-row">
+                            <img class="my-auto button-icon" alt="" src="{{ asset('assets/images/projects/onenight/icon-2.svg') }}"/>
+                            <a class="my-auto onenight-button">Minimum Viable Product</a>
+                        </div>
+
+                        <div class="button-icon-padding mt-2 mb-3 d-flex flex-column">
+                            <span>Création d'un compte Instagram pour partager des soirées à Paris et tester la réaction du public au concept de soirées partagées entre particuliers.</span>
+                            <span style="color: rgb(245,153,217)">Objectif organiser 30 soirées pour valider la demande</span>
+                        </div>
+
+                        <div class="button-icon-padding d-flex flex-column mx-auto">
+                            <span style="color: rgb(245,153,217); font-size: 25px; text-transform: uppercase">Publicité pour mon compte Instagram</span>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap my-3">
+                            <div class="col-md-6 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-magenta">+<span class="increment-number" data-increment-start="0" data-increment-end="15">15</span></span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">Soirées organisées</span>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-magenta">+<span class="increment-number" data-increment-start="0" data-increment-end="2800">2 800</span></span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">Abonnés</span>
+                            </div>
+                        </div>
+
+                        <div class="button-icon-padding mt-2 mb-3 d-flex flex-column">
+                            <span style="color: rgb(245,153,217); font-size: 25px; text-transform: uppercase">Mai 2022</span>
+                            <span>Le projet est abandonné en raison de nombreuses contraintes légales et budgétaires qui empêchent le lancement de l'application.</span>
+                        </div>
+                    </div>
+
+                    <div style="max-width: 470px" class="col-lg-4 d-flex flex-column mb-5 mb-lg-0 short-container mx-auto mx-lg-0">
+                        <iframe style="max-height: calc(90vh - 72px)" class="my-auto short" src="https://www.youtube.com/embed/Dl4CM4G8QnU" title="Publicité pré-inscriptions OneRun" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-3" class="frame" data-frame-id="3">
+            <div class="frame-content w-100">
+                <div class="min-vh-100 ricci-milano-top d-flex flex-column">
+                    <div class="mt-5 pt-5 d-flex flex-column">
+                        <span class="neon-wheat text-center mx-3">SITE DE VENTE DE LUNETTES DE SOLEIL</span>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row flex-md-wrap my-auto py-3 px-3">
+                        <div class="col-md-6 d-flex flex-column mb-3 mb-md-0 mx-auto mx-md-0">
+                            <div class="d-flex flex-column ms-auto my-auto">
+                                <div class="info-case info-case-reverse mx-3 my-3">
+                                    <span class="info-name">Ricci-Milano</span>
+                                    <span class="info-date">2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column mx-auto mx-md-0">
+                            <div class="d-flex flex-column me-auto my-auto">
+                                <img width="100%" src="{{ asset('assets/images/projects/ricci-milano/logo.svg') }}" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-vh-100 ricci-milano-bottom d-flex flex-column px-5 py-5">
+                    <div class="d-flex flex-column my-auto py-5">
+                        <div class="mx-auto d-flex flex-column" style="max-width: 1450px">
+                            <div class="d-flex flex-row mb-4">
+                                <img class="my-auto" src="{{ asset('assets/images/projects/ricci-milano/icon-1.svg') }}" alt=""/>
+                                <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">I. Sélection d'un fournisseur de lunettes de soleil en Chine sur internet.</span>
+                            </div>
+                            <div class="d-flex flex-row mb-4">
+                                <img class="my-auto" src="{{ asset('assets/images/projects/ricci-milano/icon-2.svg') }}" alt=""/>
+                                <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">II. Création d'une boutique en ligne sur Shopify.</span>
+                            </div>
+                            <div class="d-flex flex-row mb-4">
+                                <img class="my-auto" src="{{ asset('assets/images/projects/ricci-milano/icon-3.svg') }}" alt=""/>
+                                <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">III. Mise en place d'une campagne de publicité sur les réseaux sociaux.</span>
+                            </div>
+                            <div class="d-flex flex-row mb-4">
+                                <img class="my-auto" src="{{ asset('assets/images/projects/ricci-milano/icon-4.svg') }}" alt=""/>
+                                <span class="my-auto ms-3" style="font-size: 20px; font-weight: 750">IV. Collecte des commandes et prise en charge de la livraison directe chez le client auprès du fournisseur choisi.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row flex-md-wrap w-100 mx-auto mt-5" style="max-width: 1450px">
+                            <div class="col-md-6 col-lg-4 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-wheat"><span class="increment-number" data-increment-start="0" data-increment-end="14">14</span></span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">Ventes</span>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-wheat">+<span class="increment-number" data-increment-start="0" data-increment-end="600">600</span> €</span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">CA</span>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-wheat">+<span class="increment-number" data-increment-start="0" data-increment-end="14000">14 000</span></span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">Visites</span>
+                            </div>
+                            <div class="col-md-6 col-lg-4 d-flex flex-column mx-auto py-3">
+                                <span class="text-center neon-wheat">+<span class="increment-number" data-increment-start="0" data-increment-end="200">200</span> €</span>
+                                <span class="text-center" style="font-size: 20px; font-weight: 750">Bénéfices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,0 +1,14 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g id="invisible_box" data-name="invisible box">
+        <rect id="Rectangle_29" data-name="Rectangle 29" width="48" height="48" fill="none"/>
+    </g>
+    <g id="Health_Icons" data-name="Health Icons">
+        <g id="Groupe_17" data-name="Groupe 17">
+            <path id="Tracé_45" data-name="Tracé 45" d="M44,30H42.8L26.4,13.6a1.9,1.9,0,0,0-2.8,0l-5.9,5.9a1,1,0,0,1-1.4,0L14.8,18l1.6-1.6h0L25,7.8l8.6,8.6A2,2,0,0,0,35,17h9a2,2,0,0,0,0-4H35.8L26.4,3.6a1.9,1.9,0,0,0-2.8,0L14.2,13H4a2,2,0,0,0,0,4h6.6a2.8,2.8,0,0,0,.7,3.1l2.2,2.2a5,5,0,0,0,7,0L25,17.8,40.6,33.4A2,2,0,0,0,42,34h2a2,2,0,0,0,0-4Z" fill="#f76e22"/>
+            <path id="Tracé_46" data-name="Tracé 46" d="M31.4,27.6a2,2,0,0,0-2.8,2.8l7,7a1.981,1.981,0,1,0,2.8-2.8Z" fill="#f76e22"/>
+            <path id="Tracé_47" data-name="Tracé 47" d="M25.4,30.6a2,2,0,0,0-2.8,2.8l7,7a1.981,1.981,0,1,0,2.8-2.8Z" fill="#f76e22"/>
+            <path id="Tracé_48" data-name="Tracé 48" d="M18.4,32.6a2,2,0,0,0-2.8,2.8l7,7a1.981,1.981,0,1,0,2.8-2.8Z" fill="#f76e22"/>
+            <path id="Tracé_49" data-name="Tracé 49" d="M7.4,30.6A2,2,0,0,0,6,30H4a2,2,0,0,0,0,4H5.2L15.6,44.4a1.981,1.981,0,1,0,2.8-2.8Z" fill="#f76e22"/>
+        </g>
+    </g>
+</svg>
